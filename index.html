@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoTube</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #202020;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #ff0000;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .search-bar input {
+      width: 80%;
+      max-width: 500px;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      background-color: #181818;
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .video {
+      background-color: #181818;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .video:hover {
+      transform: scale(1.03);
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    .title {
+      padding: 0.8rem;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #aaa;
+      background-color: #202020;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>🎬 VideoTube</header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Szukaj filmiku po tytule..." />
+  </div>
+
+  <div class="container" id="videoContainer">
+    <div class="video" data-title="Przetrwałem 100 DNI w MINECRAFT HARDCORE na BEZLUDNEJ WYSPIE!">
+      <iframe src="https://www.youtube.com/embed/lcz1oR-qVLI?start=52" allowfullscreen></iframe>
+      <div class="title">Przetrwałem 100 DNI w MINECRAFT HARDCORE na BEZLUDNEJ WYSPIE!</div>
+    </div>
+    
+    <div class="video" data-title="Zagrałem w Symulator Sejmu 💀">
+      <iframe src="https://www.youtube.com/embed/FcIB3mIZgWw?start=571" allowfullscreen></iframe>
+      <div class="title">Zagrałem w Symulator Sejmu 💀</div>
+    </div>
+
+    <div class="video" data-title="Już Jest! *HUGGY & FRIENDS* Czyli 'POPPY PLAYTIME' w MINECRAFT...">
+      <iframe src="https://www.youtube.com/embed/9day-EU037I" allowfullscreen></iframe>
+      <div class="title">Już Jest! *HUGGY & FRIENDS* Czyli "POPPY PLAYTIME" w MINECRAFT...</div>
+    </div>
+    
+<div class="video" data-title="Pięć Koszmarnych Bober">
+  <iframe 
+    src="https://www.youtube.com/embed/nEb2RaSD1qs" 
+    allowfullscreen>
+  </iframe>
+  <div class="title">Pięć Koszmarnych Bober</div>
+</div>
+
+<div class="video" data-title="Eleven przez 30 minut nie może zamknąć się mówiąc o filmie 'Pięć Koszmarnych Nocy'">
+  <iframe 
+    src="https://www.youtube.com/embed/utwsg6Z56-s" 
+    allowfullscreen>
+  </iframe>
+  <div class="title">Eleven przez 30 minut nie może zamknąć się mówiąc o filmie "Pięć Koszmarnych Nocy"
+  </div>
+</div>
+
+<div class="video" data-title="FIVE NIGHTS AT FREDDY'S w skrócie #24">
+  <iframe src="https://www.youtube.com/embed/D0mNFsi-oMY?start=1" allowfullscreen></iframe>
+  <div class="title">FIVE NIGHTS AT FREDDY'S w skrócie #24
+  </div>
+</div>
+
+<div class="video" data-title="FIVE NIGHTS AT FREDDY's 4 w SKRÓCIE #26">
+  <iframe src="https://www.youtube.com/embed/yFDyW0l-VmQ" allowfullscreen></iframe>
+  <div class="title">FIVE NIGHTS AT FREDDY's 4 w SKRÓCIE #26
+  </div>
+</div>
+
+<div class="video" data-title="JAK LOGICZNIE PRZEŻYĆ W FIVE NIGHTS AT FREDDY'S?">
+  <iframe src="https://www.youtube.com/embed/qBEdpRsfpV8" allowfullscreen></iframe>
+  <div class="title">JAK LOGICZNIE PRZEŻYĆ W FIVE NIGHTS AT FREDDY'S?</div>
+</div>
+
+<div class="video" data-title="DIZOWSKYY TO PRZYBYSZ... ? J̸̦́E̶̙͋S̷͔͊T̵̲͘ ̷͚̒S̵͉͆Ṵ̵̒S̵̓ͅ *DODANO MNIE DO NO I'M NOT A HUMAN?*">
+  <iframe src="https://www.youtube.com/embed/FL6ebn8Ui8g" allowfullscreen></iframe>
+  <div class="title">DIZOWSKYY TO PRZYBYSZ... ? J̸̦́E̶̙͋S̷͔͊T̵̲͘ ̷͚̒S̵͉͆Ṵ̵̒S̵̓ͅ *DODANO MNIE DO NO I'M NOT A HUMAN?*</div>
+</div>
+
+<div class="video" data-title="Cyborg Ma Problem. Wiem Jak Pomóc | Animacje">
+  <iframe src="https://www.youtube.com/embed/49X973NWN8U" allowfullscreen></iframe>
+  <div class="title">Cyborg Ma Problem. Wiem Jak Pomóc | Animacje</div>
+</div>
+
+<div class="video" data-title="🤖AI Tworzy 🧠STEAL A BRAINROT🧠">
+  <iframe src="https://www.youtube.com/embed/ch685P4Q384" allowfullscreen></iframe>
+  <div class="title">🤖AI Tworzy 🧠STEAL A BRAINROT🧠</div>
+</div>
+
+<div class="video" data-title="Minecraft na modach seria 1 odcinek 1">
+  <iframe src="https://www.youtube.com/embed/SCkPRbO0Wo4" allowfullscreen></iframe>
+  <div class="title">Minecraft na modach seria 1 odcinek 1</div>
+</div>
+
+<div class="video" data-title="BECZKA NIE ŻYJE 😭">
+  <iframe src="https://www.youtube.com/embed/BqE4nQo5uFE" allowfullscreen></iframe>
+  <div class="title">BECZKA NIE ŻYJE 😭</div>
+</div>
+
+<div class="video" data-title="Robert Lewangoonski ft. Neymar Goonior, Wayne Gooney - POPYT (Official Music Video)">
+  <iframe src="https://www.youtube.com/embed/DsKy_8hLPE0" allowfullscreen></iframe>
+  <div class="title">Robert Lewangoonski ft. Neymar Goonior, Wayne Gooney - POPYT (Official Music Video)</div>
+</div>
+
+<div class="video" data-title="Bluey i jej gra wideo za 185 złote...">
+  <iframe src="https://www.youtube.com/embed/kYZ-nIx7xAk" allowfullscreen></iframe>
+  <div class="title">Bluey i jej gra wideo za 185 złote...</div>
+</div>
+
+<div class="video" data-title="TO BĘDZIE NAJSTRASZNIEJSZA SERIA W HISTORII... | Minecraft: We Mgle Finał #1">
+  <iframe src="https://www.youtube.com/embed/haDj2MLM_8I" allowfullscreen></iframe>
+  <div class="title">TO BĘDZIE NAJSTRASZNIEJSZA SERIA W HISTORII... | Minecraft: We Mgle Finał #1</div>
+</div>
+
+<div class="video" data-title="Generare hangal">
+  <iframe src="https://www.youtube.com/embed/4kQVoxDi4iI" allowfullscreen></iframe>
+  <div class="title">Generare hangal</div>
+</div>
+
+<div class="video" data-title="OTWORZYŁEM 70 MEME JAJEK ZA 14.000 ROBUX W PLANTS VS BRAINROTS! Roblox">
+  <iframe src="https://www.youtube.com/embed/J1L4ljvFNfQ" allowfullscreen></iframe>
+  <div class="title">OTWORZYŁEM 70 MEME JAJEK ZA 14.000 ROBUX W PLANTS VS BRAINROTS! Roblox</div>
+</div>
+
+<div class="video" data-title="POŻARLI SIĘ o... KEBABA xD | Friz, Książulo">
+  <iframe src="https://www.youtube.com/embed/xlzFw7en5r8?start=350" allowfullscreen></iframe>
+  <div class="title">POŻARLI SIĘ o... KEBABA xD | Friz, Książulo</div>
+</div>
+
+<div class="video" data-title="MINECRAFT, ale TO POLSKIE ŚWIĘTA... *beka*">
+  <iframe src="https://www.youtube.com/embed/rMtADNEqtPk" allowfullscreen></iframe>
+  <div class="title">MINECRAFT, ale TO POLSKIE ŚWIĘTA... *beka*</div>
+</div>
+
+<div class="video" data-title="MINECRAFT, ale PORWAŁY MNIE POLSKIE SMERFY...">
+  <iframe src="https://www.youtube.com/embed/sk2Eyo2z1Wc" allowfullscreen></iframe>
+  <div class="title">MINECRAFT, ale PORWAŁY MNIE POLSKIE SMERFY...</div>
+</div>
+
+<div class="video" data-title="Amanda to bardzo dziwna gra">
+  <iframe src="https://www.youtube.com/embed/YdIZte-9BNY?start=2" allowfullscreen></iframe>
+  <div class="title">Amanda to bardzo dziwna gra</div>
+</div>
+
+<div class="video" data-title="100 Kids Vs World's Strongest Man!">
+  <iframe src="https://www.youtube.com/embed/oBXSvS2QKxU" allowfullscreen></iframe>
+  <div class="title">100 Kids Vs World's Strongest Man!</div>
+</div>
+
+<div class="video" data-title="SZKOŁA - ALIEN VS PREDATOR">
+  <iframe src="https://www.youtube.com/embed/rB0QuYxgEdQ" allowfullscreen></iframe>
+  <div class="title">SZKOŁA - ALIEN VS PREDATOR</div>
+</div>
+
+<div class="video" data-title="Przetrwałem 100 dni na LUCKYBLOCK HARDCORE ONEBLOCK">
+  <iframe src="https://www.youtube.com/embed/944yxi3P9so" allowfullscreen></iframe>
+  <div class="title">Przetrwałem 100 dni na LUCKYBLOCK HARDCORE ONEBLOCK</div>
+</div>
+
+<div class="video" data-title="OLSZA | STRASZNY HORROR | ZEMSTA POU 😱😧🤯">
+  <iframe src="https://www.youtube.com/embed/LgIDYgG-N0M" allowfullscreen></iframe>
+  <div class="title">OLSZA | STRASZNY HORROR | ZEMSTA POU 😱😧🤯</div>
+</div>
+
+<div class="video" data-title="OGLĄDAJ OLSZE">
+  <iframe src="https://www.youtube.com/embed/RcHIUC9Ae70" allowfullscreen></iframe>
+  <div class="title">OGLĄDAJ OLSZE</div>
+</div>
+
+  </div>
+
+  <footer>VideoTube — Twoje ulubione filmiki w jednym miejscu</footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const videos = document.querySelectorAll('.video');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      videos.forEach(video => {
+        const title = video.dataset.title.toLowerCase();
+        video.style.display = title.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
